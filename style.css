@@ -1,0 +1,97 @@
+/* #62 Gallery */ 
+body
+{
+  height: 100vh;
+  direction: rtl;
+  background: url('img/zakah.m3') center center/contain no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.container {
+  width: 500px;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background: red;
+  padding: 20px;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, .6);
+  border-radius: 20px;
+} 
+
+h1{
+  font-size: 50px;
+  text-align: center;
+  background: transparent;
+  color: #e4b95b;
+} 
+audio{
+  text-align: center;
+  width: 200px;
+}
+
+form{
+  margin-top: 2rem
+}
+
+input
+{
+  border: none;
+  margin: 0 10px 10px;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .6);
+  width: 200px;
+  height: 50px;
+}
+
+#value
+{
+  background: #fa0;
+}
+
+input::placeholder {
+  color: lawngreen;
+}
+p{
+  font-size: 20px;
+  color : darkblue;
+  margin: 5px 30px;
+  text-align: center;
+}
+/* responsive screen size*/
+@media (max-width: 450px){
+  body{
+    background: url('img/zakah.m3')center center/contain no-repeat ;
+  }
+  .container {
+    width: 400px;
+    height: 350px;
+  background: red;
+  padding: 10px;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, .6);
+  border-radius: 20px;
+} 
+  input{
+    height: 10px;
+    width: 120px;
+    padding: 20px;
+    margin: 0 5px 10rem;
+    color: lawngreen;
+  }
+  p{
+    font-size: 15px;
+    margin-bottom: 1rem;
+  }
+  h2{
+    margin-bottom: 1rem;
+    font-size: 16px;
+  }
+}
